@@ -1,0 +1,19 @@
+import tomyjerry.*
+
+    describe "tom y jerry" {
+
+        test "tom come a jerry y a nibbles" {
+            assert.equals(10. tom.velocidadMaxima())
+            tom.comer(jerry)
+            assert.equals(15.2, tom.velocidadMaxima())
+            tom.correr(24)
+            assert.equals(14, tom.velocidadMaxima())
+            tom.comer(nibbles)
+            assert.equals(18.7, tom.velocidadMaxima())
+            jerry.cumplir()
+            tom.comer(jerry)
+            assert.equals(25.9, tom.velocidadMaxima())
+            tom.correr(38)
+            assert.equals(24, tom.velocidadMaxima())
+        }
+    }
