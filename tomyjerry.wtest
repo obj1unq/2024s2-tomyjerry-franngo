@@ -16,4 +16,8 @@ import tomyjerry.*
             tom.correr(38)
             assert.equals(24, tom.velocidadMaxima())
         }
+
+        test "tom" {
+            
+        }
     }
