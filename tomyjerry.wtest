@@ -17,7 +17,12 @@ import tomyjerry.*
             assert.equals(24, tom.velocidadMaxima())
         }
 
-        test "tom" {
-            
+        test "tom puede y quiere comer" {
+            assert.notThat(tom.puedeComer(120))
+            assert.notThat(tom.quiereComer(jerry, 120))
+            assert.that(tom.puedeComer(96))
+            assert.notThat(tom.quiereComer(nibbles, 96))
+            assert.that(tom.puedeComer(60))
+            assert.that(tom.quiereComer(nibbles, 60))
         }
     }

@@ -31,11 +31,11 @@ object tom {
 	}
 
 	method puedeComer(distancia) {
-		return energiaGastadaCorriendo(distancia) < energia
+		return self.energiaGastadaCorriendo(distancia) < energia
 	}
 
 	method quiereComer(raton, distancia) {
-		return self.puedeComer(distancia) && energiaGastadaCorriendo(distancia) < energiaObtenidaComiendo(raton)
+		return self.puedeComer(distancia) && self.energiaGastadaCorriendo(distancia) < self.energiaObtenidaComiendo(raton)
 	}
 	
 }
