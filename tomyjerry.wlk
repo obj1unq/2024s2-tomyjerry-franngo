@@ -7,17 +7,19 @@ object tom {
 		return energia
 	}
 
+	//acá remplazo distancia / 2 por el método consulta qu devuelve la distancia para evitar código duplicado
 	method correr(distancia) {
-		energia = energia - (distancia / 2)
+		energia = energia - self.energiaGastadaCorriendo(distancia)
 	}
 
 	method energiaGastadaCorriendo(distancia) {
 		return distancia / 2
 	}
-	 
+	
+	//idem con lo del remplazo en correr()
 	//esto funciona gracias al POLIMORFISMO
 	method comer(raton) {
-		energia = energia + 12 + raton.peso()
+		energia = energia + self.energiaObtenidaComiendo(raton)
 	}
 
 	method energiaObtenidaComiendo(raton) {
